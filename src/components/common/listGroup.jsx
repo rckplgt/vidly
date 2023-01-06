@@ -9,8 +9,8 @@ const ListGroup = ({
 }) => {
   //Props have to be passed as objects in curly brackets.
   return (
-    <div>
-      <ul className="list-group">
+    <div className=" mb-2">
+      <ul className="list-group p-0 m-0">
         {items.map((item) => (
           <li
             key={item._id}

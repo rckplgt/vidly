@@ -1,8 +1,8 @@
 import React from "react";
 
-function Like(props) {
+function Like({ liked, onLike }) {
   let classes = "";
-  if (props.liked) {
+  if (liked) {
     classes = "fa fa-heart";
   } else {
     classes = "fa fa-heart-o";
@@ -11,7 +11,7 @@ function Like(props) {
     <i
       className={classes}
       aria-hidden="true"
-      onClick={props.onClick}
+      onClick={onLike}
       style={{ cursor: "pointer" }}
     ></i>
   );
